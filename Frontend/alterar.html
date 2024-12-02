@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Maratona - Maratona+</title>
+    <link rel="stylesheet" href="css/alterar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imgs/logo-png.png" alt="Maratona+">
+            </div>
+            <button id="theme-toggle">
+                <img src="imgs/clima.png" alt="Mudar Tema">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="admin-section">
+            <h1>Alterar Maratona</h1>
+            <a href="incluir.html"><button type="button" id="search-button" class="save-button">Criar uma Nova Maratona</button></a>
+                
+            <table id="adminList">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Local</th>
+                        <th>Status</th>
+                        <th>Distância</th>
+                        <th>Clima</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas das maratonas serão inseridas aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/alterar1.js"></script>
+</body>
+</html>

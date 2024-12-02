@@ -1,0 +1,245 @@
+:root {
+    --background-color: #e9e9e9;
+    --text-color: #ffffff;
+    --header-background: #1A1F71;
+    --footer-background:  #1A1F71;
+    --button-background: #1A1F71;
+    --button-text-color: #ffffff;
+    --card-background: #ffffff;
+    --card-hover-background: #fefefe;
+    --button-background: #1A1F71;
+    --secondary-color: #1A1F71;
+    --hover-color: #1A1F71;
+}
+body.dark-theme {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --header-background: #555555;
+    --footer-background: #444444;
+    --button-background: #ff9800;
+    --button-text-color: #ffffff;
+    --card-background: #444444;
+    --card-hover-background: #555555;
+    --primary-color: #ff9800;
+    --secondary-color: #ff5722;
+    --hover-color: #ff7043;
+    --input-border: #555555;
+    --input-focus-border: #ff7043;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Raleway", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 80px;
+    margin-right: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .nav-links li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+header nav .nav-links li a:hover {
+    background-color: var(--hover-color);
+}
+
+header nav button {
+
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+header nav button:hover {
+    background-color: var(--hover-color);
+}
+
+header nav button img {
+    height: 25px;
+}
+
+main {
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.admin-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.save-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: var(--hover-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #cecece;
+    color: #000000;;
+}
+
+table thead th {
+    padding: 15px;
+    text-align: left;
+}
+
+table tbody tr {
+    border-bottom: 1px solid var(--input-border);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--card-background);
+}
+
+table tbody tr:hover {
+    background-color: var(--card-hover-background);
+}
+
+table tbody td {
+    padding: 15px;
+    text-align: left;
+}
+
+table tbody td img {
+    display: block;
+    margin: 0 auto;
+}
+
+table tbody td button,
+div.swal2-actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+table tbody td .update {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    margin-bottom: 15px;
+}
+
+table tbody td .delete {
+    background-color: var(--secondary-color);
+    color: var(--button-text-color);
+    width: 80%;
+}
+
+table tbody td button:hover,
+div.swal2-popup.swal2-modal.swal2-icon-warning.swal2-show div.swal2-actions button:hover {
+    background-color: var(--hover-color);
+}
+
+#search-button.save-button {
+    background-color: #1A1F71;
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+
+#search-button.save-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.update,
+button.delete {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-weight: bold
+}
+
+div.swal2-actions button {
+    margin-left: 20px;
+    font-size: medium;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+div.swal2-actions button.swal2-cancel.btn.btn-danger {
+    background-color: var(--secondary-color);
+    color: var(--button-text-color);
+}
+div.swal2-actions button.swal2-confirm.btn.btn-success {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+}

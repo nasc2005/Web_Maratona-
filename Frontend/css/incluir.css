@@ -1,0 +1,183 @@
+:root {
+    --background-color: #e9e9e9;
+    --text-color: #ffffff;
+    --header-background: #1A1F71;
+    --footer-background:  #1A1F71;
+    --button-background: #1A1F71;
+    --button-text-color: #ffffff;
+    --card-background: #ffffff;
+    --card-hover-background: #fefefe;
+    --button-background: #1A1F71;
+    --secondary-color: #1A1F71;
+    --hover-color: #1A1F71;
+}
+
+body.dark-theme {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --header-background: #555555;
+    --footer-background: #444444;
+    --button-background: #ff9800;
+    --button-text-color: #ffffff;
+    --card-background: #444444;
+    --card-hover-background: #555555;
+    --primary-color: #ff9800;
+    --secondary-color: #ff5722;
+    --hover-color: #ff7043;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 80px;
+    margin-right: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .nav-links li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+header nav .nav-links li a:hover {
+    background-color: var(--hover-color);
+}
+
+header nav button {
+    background-color: var(--button-background);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+header nav button:hover {
+    background-color: var(--hover-color);
+}
+
+header nav button img {
+    height: 25px;
+}
+
+main {
+    padding: 30px;
+}
+
+
+.admin-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form .form-group {
+    margin-bottom: 20px;
+}
+
+.admin-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.admin-form .form-group input,
+.admin-form .form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.admin-form .form-group textarea {
+    height: 100px;
+}
+
+.admin-form .save-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1A1F71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-form .save-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Estilo para o dropdown de categorias */
+select#categoria {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background-color: var(--card-background);
+    font-size: 16px;
+    height: auto;
+    max-height: 150px;
+    overflow-y: auto;
+    transition: border 0.3s;
+}
+
+select#categoria option {
+    padding: 10px;
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+select#categoria option:hover {
+    background-color: var(--hover-color);
+}
+
+select#categoria:focus {
+    border-color: var(--input-focus-border);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.6); /* Adaptar a cor do tema */
+}
